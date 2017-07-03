@@ -1,0 +1,53 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
+require('./index.scss');
+
+//state
+//lifecycle event
+//UI
+
+class Users extends React.Component {
+  render(){
+    return (
+<div>
+<h1>Friends</h1>
+<ul>
+{this.props.list.filter(function (user) {
+  return user.friend === true;
+}).map(function(user){
+  return <li>{user.name}</li>;
+})}
+      </ul>
+</div>
+    );
+  }
+}
+
+class Badge extends React.Component {
+  render(){
+    return (
+	<div>
+	<img alt="avatar" src={this.props.img}
+      style={{width: 100, height: 100}}/>
+	<h1>Name: {this.props.name}</h1>
+	<h3>username: {this.props.username}</h3>
+	</div>
+    );
+  }
+}
+
+ReactDOM.render(<Badge
+		name='Einars Vilnis'
+		username='evilnis'
+		img='http://en.wikipedia.org/wiki/File:Henri_Moissan_HiRes.jpg'
+		/>,
+		document.getElementById('root'));
+
+ReactDOM.render(<Users list={[
+  {name: 'Einars', friend: true},
+  {name: 'Edite', friend: true},
+  {name: 'Daniels', friend: true},
+  {name: 'Alise', friend: true},
+  {name: 'Kristians', friend: true}
+]}
+		/>, document.getElementById('app'));

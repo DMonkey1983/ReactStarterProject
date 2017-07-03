@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+node_modules
+build
+=======
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+/out/
+
+
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# NodeJS modules folder
+node_modules
+/dist/
+
+
+# npm debug log
+npm-debug.log
+
+>>>>>>> update
