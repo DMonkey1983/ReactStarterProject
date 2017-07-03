@@ -1,62 +1,6 @@
-{
-<<<<<<< HEAD
-  "name": "react-fundamentals",
-  "version": "1.0.0",
-  "description": "React Fundamentals",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "webpack": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/DMonkey1983/React-Fundamentals.git"
-  },
-  "keywords": [
-    "react",
-    "js"
-  ],
-  "author": "Einars Vilnis",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-latest": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.4",
-    "eslint": "^3.19.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "html-webpack-plugin": "^2.29.0",
-    "node-libs-browser": "^2.0.0",
-    "node-sass": "^4.5.3",
-    "path": "^0.12.7",
-    "postcss": "^6.0.3",
-    "postcss-loader": "^2.0.6",
-    "sass-loader": "^6.0.5",
-    "strip-loader": "^0.1.2",
-    "style-loader": "^0.18.2",
-    "url-loader": "^0.5.8",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
-  },
-  "bugs": {
-    "url": "https://github.com/DMonkey1983/React-Fundamentals/issues"
-  },
-  "homepage": "https://github.com/DMonkey1983/React-Fundamentals#readme",
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.1",
-    "youtube-api-search": "0.0.5"
-=======
-  "name": "react-webpack-boilerplate",
+  "name": "react-youtube-boilerplate",
   "version": "2.0.0",
-  "description": "Minimalistic ES6 React boilerplate",
+  "description": "You tube boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -68,7 +12,7 @@
     "precommit": "cross-env npm run lint && npm test",
     "prepush": "cross-env npm run lint && npm test"
   },
-  "author": "Kliment Petrov <kleopetroff@gmail.com>",
+  "author": "Einars Vilnis",
   "license": "MIT",
   "dependencies": {
     "cross-env": "^5.0.1",
@@ -114,6 +58,5 @@
     "url-loader": "0.5.8",
     "webpack": "3.0.0",
     "webpack-dev-server": "2.5.0"
->>>>>>> update
   }
 }
