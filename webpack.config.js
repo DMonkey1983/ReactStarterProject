@@ -1,69 +1,3 @@
-<<<<<<< HEAD
-var path = require('path');
-
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
-module.exports = {
-  entry: "./src/app.js",
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: "bundle.js"
-  },
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './'
-  },
-  watch: true,
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-	loader:'babel-loader',
-	query: {
-	    presets: ['es2015', 'react']
-	}
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      },
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: '/node_modules/',
-        loader: 'eslint-loader'
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-	use:ExtractTextPlugin.extract({
-	  fallback: "style-loader",
-	  use: "css-loader!sass-loader"
-	})
-      }
-    ]
-  },
-  stats: {
-    colors: true
-  },
-  devtool: 'source-map',
-  plugins: [
-    new ExtractTextPlugin("index.scss"),
-    new HtmlWebpackPlugin({
-      template: 'src/index.html'
-    })
-  ],
-  resolve: {
-      extensions: ['.js', '.es6', '.jsx']
-  }
-};
-=======
 const { resolve } = require('path');
 
 const webpack = require('webpack');
@@ -154,4 +88,3 @@ const config = {
 };
 
 module.exports = config;
->>>>>>> update
